@@ -4,4 +4,4 @@ let myMap = new Map([
   ["teclado", 'keyboard'],
 ])
 
-myMap.get("ordenador")
+alert(myMap.get("ordenador"))
