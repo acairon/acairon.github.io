@@ -1,0 +1,245 @@
+/* General */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background: #4caf50;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #388e3c;
+  }
+  
+  .btn-secondary {
+    background: #333;
+  }
+  
+  .btn-secondary:hover {
+    background: #555;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #4caf50;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Descripción */
+  .descripcion {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+  }
+  
+  .descripcion h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4caf50;
+  }
+  
+  .descripcion p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+  
+  .funcionalidades ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .funcionalidades ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+  }
+  
+  .funcionalidades ul li i {
+    color: #4caf50;
+    margin-right: 0.5rem;
+  }
+  
+  /* Tecnologías */
+  .tecnologias {
+    padding: 4rem 1rem;
+    background: white;
+  }
+  
+  .tecnologias h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4caf50;
+  }
+  
+  .tech-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .tech-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .tech-card h3 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+  }
+  
+/* Contacto */
+.contacto {
+    padding: 4rem 1rem;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+  }
+  
+  .contacto p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #555;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #388e3c;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .social-links a:hover {
+    color: #4caf50;
+  }
+  
