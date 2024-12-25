@@ -3,148 +3,359 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Portafolio - El Mejor</title>
+  <title>Portafolio con Minijuego - Angel Cairon Arcila</title>
+
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-    rel="stylesheet"
-  />
-  <!-- Font Awesome para íconos -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/kMVF29ZB1fGzyspmsiR7BxUtFvpl9tsoI7GeN3CjZ2mQhw19De9m5ye5fDIJv2anr8E1e1ZVIeN2Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- Hoja de Estilos -->
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Íconos de FontAwesome -->
+  <script src="https://kit.fontawesome.com/158f861876.js" crossorigin="anonymous"></script>
+
+  <!-- Particles.js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js"></script>
+
+  <!-- css -->
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">MiPortafolio</div>
-    <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre-mi">Sobre Mí</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-    <div class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </nav>
+  <!-- PARTICLES CONTENEDOR -->
+  <div id="particles-js"></div>
 
-  <!-- SECCIÓN INICIO (HERO) -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">¡Hola! Soy <span>Angel</span></h1>
-      <p class="hero-subtitle">
-        Desarrollador Full Stack | Apasionado por la Tecnología
+  <!-- HEADER (ONDAS + BURBUJAS) -->
+  <header>
+    <!-- Burbujas en el Header -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <div class="header-content">
+      <h1>Angel Cairon Arcila</h1>
+      <p>
+        Persona versátil y capaz de simultanear varias tareas, con amplia experiencia 
+        en entornos laborales en los que se valora el compromiso y la capacidad de 
+        trabajar en equipo.
       </p>
-      <a href="#proyectos" class="btn btn-primary">Ver Mis Proyectos</a>
     </div>
-    <!-- Efecto de partículas (Opcional si luego agregas JS) -->
-    <div id="particles-js"></div>
-    <a href="#sobre-mi" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </header>
+
+  <!-- BOTÓN SCROLL TOP -->
+  <button class="scroll-top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- SECCIÓN PERFIL -->
+  <section class="container profile">
+    <h2>Perfil</h2>
+    <p>
+      Me caracterizo por mi dinamismo, proactividad y entusiasmo. Poseo buenos 
+      conocimientos digitales y busco desarrollarme profesionalmente.
+    </p>
+    <!-- BOTÓN PARA DESBLOQUEAR MINIJUEGO -->
+    <button style="margin-top:20px; background:#ffc400; border:none; padding:12px; 
+                   border-radius:8px; cursor:pointer; font-weight:bold;" 
+            id="unlockGameBtn">
+      ¿Que tal un descanso?
+    </button>
   </section>
 
-  <!-- SECCIÓN SOBRE MÍ -->
-  <section id="sobre-mi" class="about">
-    <div class="container">
-      <div class="about-content">
-        <h2>Sobre Mí</h2>
-        <p>
-          Soy un desarrollador con experiencia en múltiples tecnologías. 
-          Me encanta crear soluciones innovadoras que combinan rendimiento, 
-          diseño y usabilidad. Disfruto trabajar en equipo y resolver 
-          desafíos complejos de forma creativa.
-        </p>
-        <p>
-          Además, me mantengo actualizado con las últimas tendencias 
-          tecnológicas y siempre estoy aprendiendo nuevas herramientas 
-          para ofrecer lo mejor en cada proyecto.
-        </p>
+  <!-- EXPERIENCIA -->
+  <section id="experience">
+    <h2 class="section-title">Experiencia</h2>
+    <div class="container timeline">
+      <!-- ITEM 1 -->
+      <div class="timeline-item">
+        <div class="timeline-year">2023-10 - 2024-07</div>
+        <div class="circle"></div>
+        <div class="timeline-line"></div>
+        <div class="timeline-content">
+          <h3>Técnico SPU</h3>
+          <h4>Pulsia/DXC</h4>
+          <p>
+            - Soporte al Usuario (in-situ como helpdesk).<br>
+            - Active Directory, Dominio.<br>
+            - Software de gestión y Servidor de ficheros.<br>
+            - VPN.<br>
+            - Montaje y Reparación de Equipos.<br>
+            - Resolución de incidencias.
+          </p>
+        </div>
       </div>
-      <div class="about-img">
-        <!-- Usa aquí tu foto o un placeholder -->
-        <div> <img src="assets/images/profilePIC.jpg" height="150px" ></div>
+      <!-- ITEM 2 -->
+      <div class="timeline-item">
+        <div class="timeline-year">2022-02 - 2023-01</div>
+        <div class="circle"></div>
+        <div class="timeline-line"></div>
+        <div class="timeline-content">
+          <h3>Soporte Técnico N1</h3>
+          <h4>Emergya</h4>
+          <p>
+            - Análisis y reporte de la resolución de incidencias y nivel de cumplimiento de SLAs.<br>
+            - Seguimiento del Cuadro de Mando.<br>
+            - Realización de informes necesarios de incidencias.<br>
+            - Indicadores acordados con el cliente.<br>
+            - Resolución de incidencias.
+          </p>
+        </div>
+      </div>
+      <!-- ITEM 3 -->
+      <div class="timeline-item">
+        <div class="timeline-year">2020-10 - 2022-02</div>
+        <div class="circle"></div>
+        <div class="timeline-line"></div>
+        <div class="timeline-content">
+          <h3>Técnico SPU</h3>
+          <h4>Pulsia/DXC, Cádiz</h4>
+          <p>
+            - Soporte al Usuario (in-situ como helpdesk).<br>
+            - Active Directory, Dominio.<br>
+            - Software de gestión.<br>
+            - Servidor de ficheros.<br>
+            - VPN.<br>
+            - Montaje y Reparación de Equipos.<br>
+            - Resolución de incidencias.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN PROYECTOS -->
-  <section id="proyectos" class="projects">
-    <div class="container">
-      <h2>Proyectos</h2>
-
-      <div class="card-grid">
-        <div class="card">
-          <div class="card-header">
-            <h3>Arch-lab</h3>
-          </div>
-          <div class="card-body">
-            <p>
-              Proyecto Profesional para visualización de reformas 
-              arquitectónicas mediante IA.
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="proyectosProfesionales/archlab/index.html" class="btn">Ver Detalles</a>
-          </div>
-        </div>
-
-        <!-- Añade más tarjetas según tus proyectos -->
+  <!-- EDUCACIÓN -->
+  <section id="education">
+    <h2 class="section-title">Educación</h2>
+    <div class="container education">
+      <div class="education-item">
+        <a href="https://www.todofp.es/" target="_blank" class="education-link">
+          <h3>Sistemas Microinformáticos y Redes</h3>
+        </a>
+        <p>IES Mar de Cadiz</p>
+        <p>Nivel 3 EQF-MEC</p>
+      </div>
+      <div class="education-item">
+        <a href="https://www.todofp.es/" target="_blank" class="education-link">
+          <h3>Desarrollo de Aplicaciones Web</h3>
+        </a>
+        <p>IES Mar de Cadiz</p>
+        <p>Nivel 5 EQF-MEC</p>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN CONTACTO -->
-  <section id="contacto" class="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>¿Tienes preguntas o deseas colaborar? Completa el formulario a continuación y me pondré en contacto contigo.</p>
-      <form action="https://formspree.io/f/mrbbzyzd" method="POST" class="contact-form">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" name="email" placeholder="tuemail@dominio.com" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
-  
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
+  <!-- CERTIFICACIONES -->
+  <section id="certifications">
+    <h2 class="section-title">Certificaciones y Cursos</h2>
+    <div class="container cert-grid">
+      <div class="cert-item">
+        <i class="fas fa-check-circle"></i>
+        <h3>Fundamentos de TDD</h3>
+        <p>Curso/Certificación</p>
+      </div>
+        <div class="cert-item">
+        <i class="fas fa-check-circle"></i>
+        <h3>Python3 desde cero</h3>
+        <p>Curso/Certificación</p>
+      </div>
+      <div class="cert-item">
+        <i class="fas fa-check-circle"></i>
+        <h3>Django</h3>
+        <p>Curso/Certificación</p>
+      </div>
+      <div class="cert-item">
+        <i class="fas fa-check-circle"></i>
+        <h3>Oracle Apex Foundations</h3>
+        <p>Curso/Certificación</p>
+      </div>
+      <div class="cert-item">
+        <i class="fas fa-check-circle"></i>
+        <h3>Curso GIT</h3>
+        <p>Curso/Certificación</p>
+      </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
+  <section id="skills" class="animate-fade-in">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="container skills-grid">
 
+      <!-- Python -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python">
+        <h3>Python</h3>
+        <p>Desarrollo Backend y scripting</p>
+      </div>
+      <!-- Django -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django">
+        <h3>Django</h3>
+        <p>Framework para desarrollo web en Python</p>
+      </div>
+      <!-- Flask -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/flask.svg" alt="Flask">
+        <h3>Flask</h3>
+        <p>Micro-framework para APIs y servicios</p>
+      </div>
+      <!-- FastAPI -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="FastAPI">
+        <h3>FastAPI</h3>
+        <p>Framework Python para APIs rápidas</p>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Lenguaje de programación web</p>
+      </div>
+      <!-- Node.js -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="Node.js">
+        <h3>Node.js</h3>
+        <p>Entorno para JS en servidor</p>
+      </div>
+      <!-- HTML5, CSS3 -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5">
+        <h3>HTML5</h3>
+        <p>Estructura de páginas web</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3">
+        <h3>CSS3</h3>
+        <p>Diseño y maquetación web</p>
+      </div>
+      <!-- Bootstrap -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" alt="Bootstrap">
+        <h3>Bootstrap</h3>
+        <p>Framework CSS para diseño responsivo</p>
+      </div>
+      <!-- Tailwind CSS -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="Tailwind">
+        <h3>Tailwind CSS</h3>
+        <p>Framework CSS utilitario</p>
+      </div>
+      <!-- Docker -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker">
+        <h3>Docker</h3>
+        <p>Contenedores y despliegue</p>
+      </div>
+      <!-- Git -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git">
+        <h3>Git</h3>
+        <p>Control de versiones</p>
+      </div>
+      <!-- GitHub -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
+        <h3>GitHub</h3>
+        <p>Repositorios y colaboración</p>
+      </div>
+      <!-- MongoDB -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+        <h3>MongoDB</h3>
+        <p>Base de datos NoSQL</p>
+      </div>
+      <!-- MySQL -->
+      <div class="skill-card">
+        <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="MySQL">
+        <h3>MySQL</h3>
+        <p>Base de datos relacional</p>
+      </div>
+      <!-- PostgreSQL -->
+      <div class="skill-card">
+        <img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" alt="PostgreSQL">
+        <h3>PostgreSQL</h3>
+        <p>Base de datos relacional</p>
+      </div>  
+    </div>
+  </section>
 
+  <!-- PROYECTOS -->
+  <section id="projects">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="container projects-grid">
+      <div class="project-card">
+        <img src="assets\1729998055033.png" alt="ArchLab">
+        <div class="overlay">
+          <h3>ArchLab</h3>
+          <p>Gestión avanzada de arquitecturas de software.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Ver Detalles</a>
+        </div>
+      </div>
+      <!-- etc... -->
+    </div>
+  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2024 Tu Nombre. Todos los derechos reservados.</p>
-      <div class="social-links">
-        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <!-- Agrega más redes si lo deseas -->
+  <!-- CONTACTO & IDIOMAS -->
+  <section id="contact-languages">
+    <h2 class="section-title">Contacto & Idiomas</h2>
+    <div class="container contact-languages-container">
+      <!-- (1,1) => Correo -->
+      <div class="box-item">
+        <i class="fas fa-envelope"></i>
+        <span class="email-link">angelshce@gmail.com</span>
+      </div>
+      <!-- (1,2) => Inglés -->
+      <div class="box-item">
+        <i class="fas fa-comment-dots"></i>
+        <div>
+          <h3>Inglés</h3>
+          <p>Nivel Intermedio</p>
+        </div>
+      </div>
+      <!-- (2,1) => Teléfono -->
+      <div class="box-item">
+        <i class="fas fa-phone"></i>
+        <span>(+34) 601379396</span>
+      </div>
+      <!-- (2,2) => Español -->
+      <div class="box-item">
+        <i class="fas fa-comment-dots"></i>
+        <div>
+          <h3>Español</h3>
+          <p>Nativo</p>
+        </div>
+      </div>
+      <!-- (3,1) => Ubicación -->
+      <div class="box-item location-bar">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Málaga, España</span>
       </div>
     </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Angel Cairon Arcila</p>
   </footer>
 
-  <!-- Script Opcional -->
+  <!-- ========== CONTENEDOR DEL MINIJUEGO (FULLSCREEN) ========== -->
+  <div class="game-container" id="minigameContainer">
+    <div class="game-topbar">
+      <div class="hearts" id="hearts"></div>
+      <div class="score">Puntos: <span id="scoreVal">0</span></div>
+      <!-- Botón para volver al portafolio -->
+      <button class="btn-exit-portfolio" id="btnExitPortfolio">Volver</button>
+    </div>
+    <div class="game-play-area" id="minigamePlayArea"></div>
+    <!-- Mensaje Game Over -->
+    <div class="game-over-msg" id="gameOverMsg">
+      <h2>GAME OVER</h2>
+      <p>Has explotado <span id="finalScore">0</span> burbujas</p>
+      <button id="btnRetryGame">Reintentar</button>
+    </div>
+  </div>
+
+
+  <!-- js -->
+
   <script src="script.js"></script>
+
 </body>
 </html>
