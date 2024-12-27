@@ -1,8 +1,7 @@
-
 /********************************************************
  *                      RESET & BASE                    *
  ********************************************************/
-* {
+ * {
   margin: 0; 
   padding: 0; 
   box-sizing: border-box; 
@@ -33,7 +32,7 @@ section {
 }
 
 /********************************************************
- *                 ANIMACIONES CSS                     *
+ *                 ANIMACIONES CSS                      *
  ********************************************************/
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(10px); }
@@ -53,7 +52,6 @@ section {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
 /* Burbujas del header (en portafolio normal) */
 @keyframes bubbleExplode {
   0% { transform: scale(1); opacity: 1; }
@@ -61,7 +59,7 @@ section {
 }
 
 /********************************************************
- *          BOTÓN SCROLL TO TOP (FLOTANTE)             *
+ *          BOTÓN SCROLL TO TOP (FLOTANTE)              *
  ********************************************************/
 .scroll-top {
   position: fixed;
@@ -116,7 +114,6 @@ header p {
   margin: 0 auto;
   line-height: 1.6;
 }
-
 /* Burbujas decorativas en el header */
 .bubble {
   position: absolute;
@@ -150,7 +147,6 @@ header p {
 .explode {
   animation: bubbleExplode 0.3s forwards;
 }
-
 /* Particles.js contenedor */
 #particles-js {
   position: absolute;
@@ -162,7 +158,7 @@ header p {
 }
 
 /********************************************************
- *        TÍTULOS DE SECCIONES => CENTRADOS (h2)       *
+ *       TÍTULOS DE SECCIONES => CENTRADOS (h2)         *
  ********************************************************/
 .section-title {
   text-align: center;
@@ -320,11 +316,6 @@ header p {
   color: #0a74da;
   text-decoration: underline;
 }
-@media(max-width:768px) {
-  .education {
-    grid-template-columns: 1fr;
-  }
-}
 
 /********************************************************
  *      CERTIFICACIONES / CURSOS (GRID)                 *
@@ -347,7 +338,6 @@ header p {
   color: #0a74da;
   margin-bottom: 8px;
   font-size: 1.1rem;
-  text-align: center;
 }
 .cert-item p {
   color: #555;
@@ -388,7 +378,6 @@ header p {
   color: #0a74da;
   margin-bottom: 8px;
   font-size: 1rem;
-  text-align: center;
 }
 .skill-card p {
   color: #555;
@@ -416,7 +405,8 @@ header p {
   animation: popIn 0.8s ease forwards;
 }
 .project-card img {
-  width: 100%; height: 100%;
+  width: 100%; 
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s;
 }
@@ -445,7 +435,6 @@ header p {
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: #fffc;
-  text-align: center;
 }
 .overlay p {
   font-size: 1rem;
@@ -524,12 +513,6 @@ header p {
   white-space: nowrap;
   animation: fadeInTooltip 0.4s forwards;
 }
-@media (max-width: 768px) {
-  #contact-languages .contact-languages-container {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto auto auto auto; 
-  }
-}
 
 /********************************************************
  *                      FOOTER                          *
@@ -588,7 +571,9 @@ body.minigame-mode .game-container {
   gap: 5px;
   font-size: 1.2rem;
 }
-.heart { color: red; }
+.heart { 
+  color: red; 
+}
 .score {
   font-size: 1.2rem;
   font-weight: bold;
@@ -656,4 +641,207 @@ body.minigame-mode .game-container {
   margin-top: 10px;
   font-weight: bold;
   color: #000;
+}
+
+/* ===========================================
+   MEDIA QUERIES (RESPONSIVE ADAPTATIONS)
+   =========================================== */
+
+/* Medianos (tablets y pantallas pequeñas) */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .profile {
+    margin-top: -40px;
+    padding: 30px 20px;
+  }
+  .timeline-content {
+    margin-left: 60px; /* Ajustamos para pantallas más pequeñas */
+  }
+}
+
+/* Móviles (pantallas <= 768px) */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 10px;
+  }
+  header {
+    clip-path: none; /* Opcional, puedes dejar la forma si deseas */
+    padding: 60px 20px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .bubble:nth-child(2) {
+    display: none; /* Puedes ocultar algunas burbujas si deseas menos saturación */
+  }
+  .bubble:nth-child(3) {
+    display: none;
+  }
+
+  .education {
+    grid-template-columns: 1fr;
+  }
+  .education-item {
+    padding: 15px;
+  }
+
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
+    max-width: 400px;
+    height: 180px;
+  }
+  
+  #contact-languages .contact-languages-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .location-bar {
+    grid-column: auto; 
+  }
+  .box-item {
+    flex-direction: column;
+  }
+  .box-item i {
+    font-size: 1.2rem;
+  }
+  .box-item h3, .box-item p, .box-item span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra-pequeños (pantallas <= 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 50px 15px;
+  }
+  header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  .profile {
+    margin-top: -30px; 
+    padding: 20px;
+  }
+  .timeline-line {
+    left: 45px; /* Ajustar línea para pantalla muy pequeña */
+  }
+  .circle {
+    left: 38px;
+  }
+  .timeline-content {
+    margin-left: 60px;
+    padding: 15px;
+  }
+  .timeline-year {
+    transform: translateX(-120%);
+  }
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+  }
+  .box-item {
+    min-height: auto;
+    padding: 10px;
+  }
+  .education-item, .cert-item {
+    padding: 15px;
+  }
+  .skill-card {
+    width: 160px;
+    padding: 15px;
+  }
+  .skill-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+/* MODAL => Cubierta oscura y centrar contenido */
+.email-modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6); 
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.email-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+/* Formulario dentro del modal (oculto inicialmente) */
+.email-form {
+  display: none; 
+  margin-top: 20px;
+  text-align: left;
+}
+.email-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.email-form input,
+.email-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+/* Botones */
+#openDefaultEmail,
+#openForm {
+  margin: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #0a74da;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+#openDefaultEmail:hover,
+#openForm:hover {
+  background: #094d95;
+}
+.email-form button[type="submit"] {
+  background: #ffc400;
+  border: none;
+  padding: 8px 14px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#cancelForm {
+  background: #ccc;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
